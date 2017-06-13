@@ -1,0 +1,210 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  background-image: url('https://zellox.com/wp-content/uploads/2016/05/website-backgrounds-%E2%80%AB289855825%E2%80%AC-%E2%80%AB%E2%80%AC.jpg');
+}
+
+header {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hidden{
+  display: none;
+}
+
+a:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.feed-page{
+  width: 100%;
+}
+
+.site-title{
+  position: relative;
+  width: 10%;
+  left: 45%;
+}
+
+.title-container{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sidebar{
+  position: fixed;
+  width: 170px;
+  height: 800px;
+  border-right: 3px solid black;
+}
+
+.postitem{
+  padding-left: 0;
+  padding-bottom: 50px;
+  width: 130px;
+}
+
+.sidelist{
+  padding-left: 20px;
+  position: fixed;
+  width: 150px;
+}
+
+.postit{
+  line-height: 1;
+  margin: 25px;
+  width: 250px;
+  min-height: 175px;
+  max-height: 175px;
+  padding-top: 35px;
+  position:relative;
+  border:1px solid #E8E8E8;
+  border-top:60px solid #fdfd86;
+  font-size:22px;
+  text-align: center;
+  border-bottom-right-radius: 60px 5px;
+  background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+}
+
+.postit a{
+  text-align: center;
+}
+
+.postit:after {
+  content: "";
+  position:absolute;
+  z-index:-1;
+  right:-0px; bottom:20px;
+  width:200px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+-moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+ -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+      -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+     -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+         transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.post-it-container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  left: 180px;
+  width: 80%;
+}
+
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#create-postit-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+.modal-dialog {
+  width: auto;
+  max-width: 600px;
+  min-width: 350px;
+  min-height: 300px;
+  margin: 40px auto;
+  background-image: url('https://zellox.com/wp-content/uploads/2016/05/website-backgrounds-%E2%80%AB289855825%E2%80%AC-%E2%80%AB%E2%80%AC.jpg');
+  border-radius: 15px;
+}
+
+.modal-header {
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+  position: relative;
+  left: 15%;
+  margin-top: 100px;
+}
+
+.custom-file-upload{
+  font-size: 15px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 9px;
+  margin-right: 70px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.modal-body input{
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 9px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.error-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.error-container h2 {
+  margin: 10px 0;
+  font-size: 96px;
+  font-weight: 100;
+}
+
+.error-container h3 {
+  margin: 10px 0;
+  font-size: 36px;
+  font-weight: 400;
+}

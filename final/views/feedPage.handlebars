@@ -3,11 +3,24 @@
 <main class="feed-page">
 
   <div class="title-container">
-    <h2>News Feed</h2>
+    <h2>Your Files</h2>
+  </div>
+
+  <div class="sidebar" id="sidebar-main"></div>
+    <ul class="sidelist">
+        <li class="postitem"><a href="#">Upload Image</a></li>
+        <li class="postitem"><a href="/">Home</a></li>
+    </ul>
+
+  <div class="post-it-container">
+    {{#each postits}}
+      {{> postit}}
+    {{/each}}
+
   </div>
 
   {{#if show}}
-
+    {{> createPostitModal}}
  {{/if}}
 
 </main>
